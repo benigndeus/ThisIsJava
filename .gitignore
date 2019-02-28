@@ -1,0 +1,14 @@
+# class
+bin/
+
+# vscode
+.vscode/
+
+# eclipse
+*.settings/
+.metadata/
+.classpath
+.project
+
+# personal files
+ThisIsJava.pptx
