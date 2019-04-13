@@ -1,35 +1,41 @@
 # 8장 인터페이스 Interface
+
 ## 확인문제
 
 1. 인터페이스에 대한 설명으로 틀린 것은 무엇입니까?  
   ① 인터페이스는 객체 사용 설명서 역할을 한다.  
-  ② 구현 클래스가 인터페이스의 추상 메소드에 대한 실체 메소드를 가지고 있지 않으면 추상 클래스가 된다.  
+  ② 구현 클래스가 인터페이스의 추상 메소드에 대한 실체 메소드를 가지고
+  있지 않으면 추상 클래스가 된다.  
   ③ 인터페이스는 인스턴스 필드를 가질 수 있다.  
   ④ 구현 객체는 인터페이스 타입으로 자동 변환된다.  
 
 > 답 : 3  
+A interface can't have any instance fields.  
   
+---
+
+2. 인터페이스의 다형성과 거리가 먼 것은?
+
+    ① 필드가 인터페이스 타입일 경우 다양한 구현 객체를 대입할 수 있다.  
+    ② 매개 변수가 인터페이스 타입일 경우 다양한 구현 객체를 대입할 수 있다.  
+    ③ 배열이 인터페이스 타입일 경우 다양한 구현 객체를 저장할 수 있다.  
+    ④ 구현 객체를 인터페이스 타입으로 변환하려면 강제 타입 변환을 해야 한다.  
+
+> 답 : 4  
+Casting이 아니라 Promotion 된다.
 
 ---
-2. 인터페이스의 다형성과 거리가 먼 것은?  
-  ① 필드가 인터페이스 타입일 경우 다양한 구현 객체를 대입할 수 있다.  
-  ② 매개 변수가 인터페이스 타입일 경우 다양한 구현 객체를 대입할 수 있다.  
-  ③ 배열이 인터페이스 타입일 경우 다양한 구현 객체를 저장할 수 있다.  
-  ④ 구현 객체를 인터페이스 타입으로 변환하려면 강제 타입 변환을 해야 한다.  
 
-  > 답 : 4  
-  
-
----
 3. 다음은 Soundable 인터페이스 입니다. sound() 추상 메소드는 객체의 소리를 리턴합니다.  
+
 ```java
 public interface Soundable {
         String sound();
 }
 ```
-SoundableExample 클래스에서 printSound() 메소드는 Soundable 인터페이스 타입의 매개 변수를 가지고 있습니다.
-main() 메소드에서 printSound()를 호출할 때 Cat과 Dog 객체를 주고
-실행하면 각각 "야옹"과 "멍멍"이 출력되도록 Cat과 Dog 클래스를 작성해보세요.  
+
+SoundableExample 클래스에서 printSound() 메소드는 Soundable 인터페이스 타입의 매개 변수를 가지고 있습니다. main() 메소드에서 printSound()를 호출할 때 Cat과 Dog 객체를 주고 실행하면 각각 "야옹"과 "멍멍"이 출력되도록 Cat과 Dog 클래스를 작성해보세요.  
+
 ```java
 public class SoundableExample {
         private static void printSound(Soundable soundable) {
@@ -44,6 +50,7 @@ public class SoundableExample {
 ```
 
 【Cat.java】  
+
 ```java
 public class Cat implements Soundable {
         @Override
@@ -52,6 +59,7 @@ public class Cat implements Soundable {
 ```
 
 【Dog.java】  
+
 ```java
 public class Dog implements Soundable {
         @Override
@@ -60,6 +68,7 @@ public class Dog implements Soundable {
 ```
 
 ---
+
 4. DaoExample 클래스의 main() 메소드에서 dbWork() 메소드를 호출할 때 OracleDao와 MySqlDao 객체를 매개값으로 주고 호출했습니다. dbWork() 메소드는 두 객체를 모두 매개값으로 받기 위해 DataAccessObject 타입의 매개 변수를 가지고 있습니다. 실행 결과를 보고 DataAccessObject 인터페이스와 OracleDao, MySqlDao 구현 클래스를 각각 작성해보세요.
 
 ```java
@@ -78,7 +87,8 @@ public class DaoExample {
 }
 ```  
 
-【DataAccessObject.java】 
+【DataAccessObject.java】  
+
 ```java
 public interface DataAccessObject {
         public void select();
@@ -86,9 +96,12 @@ public interface DataAccessObject {
         public void update();
         public void delete();
 }
+
+//public은 생략해도 무방하다.
 ```
 
-【OracleDao.java】 
+【OracleDao.java】  
+
 ```java
 public class OracleDao implements DataAccessObject {
         @Override
@@ -113,7 +126,8 @@ public class OracleDao implements DataAccessObject {
 }
 ```
 
-【MySqlDao.java】 
+【MySqlDao.java】  
+
 ```java
 public class MySqlDao implements DataAccessObject {
         @Override
@@ -138,7 +152,10 @@ public class MySqlDao implements DataAccessObject {
 }
 ```
 
+> 여기서 Dao는 DataAccessObject를 말한다.  
+
 ---
+
 5. 다음은 Action 인터페이스 입니다. work() 추상 메소드는 객체의 작업을 시작시킵니다.  
 
 ```java
