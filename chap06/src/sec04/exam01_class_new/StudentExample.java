@@ -1,15 +1,13 @@
 package sec04.exam01_class_new;
 
 public class StudentExample {
-
 	public static void main(String[] args) {
 
 		Student s1 = new Student();
-		System.out.println("s1 º¯¼ö°¡ Student °´Ã¼¸¦ ÂüÁ¶ÇÕ´Ï´Ù.");
+		System.out.println("s1 ë³€ìˆ˜ê°€ Student ê°ì²´ë¥¼ ì°¸ì¡°í•©ë‹ˆë‹¤.");
 		
 		Student s2 = new Student();
-		System.out.println("s2 º¯¼ö°¡ ¶Ç ´Ù¸¥ Student °´Ã¼¸¦ ÂüÁ¶ÇÕ´Ï´Ù.");
+		System.out.println("s2 ë³€ìˆ˜ê°€ ë˜ ë‹¤ë¥¸ Student ê°ì²´ë¥¼ ì°¸ì¡°í•©ë‹ˆë‹¤.");
 
 	}
-
 }

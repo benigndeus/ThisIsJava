@@ -16,11 +16,11 @@ public class ArrayCreateByListExample1 {
 			sum += scores[i];
 		}
 		
-		System.out.println("ÃÑÇÕ : " + sum);
+		System.out.println("í•©ê³„ : " + sum);
 		
 		double avg = (double) sum / 3;
 		
-		System.out.println("Æò±Õ : " + avg);
+		System.out.println("í‰ê·  : " + avg);
 
 	}
 

@@ -36,12 +36,12 @@ public class EnumWeekExample {
 			break;
 		}
 		
-		System.out.println("¿À´Ã ¿äÀÏ : " + today);
+		System.out.println("ì˜¤ëŠ˜ ìš”ì¼ : " + today);
 		
 		if(today == Week.SUNDAY) {
-			System.out.println("ÀÏ¿äÀÏ¿¡´Â ±³È¸¸¦ °©´Ï´Ù.");
+			System.out.println("ì¼ìš”ì¼ì—ëŠ” ì¶•êµ¬ë¥¼ í•©ë‹ˆë‹¤.");
 		} else {
-			System.out.println("¿­½ÉÈ÷ ÀÚ¹Ù °øºÎÇÕ´Ï´Ù.");
+			System.out.println("ì—´ì‹¬íˆ ìë°” ê³µë¶€í•©ë‹ˆë‹¤.");
 		}
 
 	}

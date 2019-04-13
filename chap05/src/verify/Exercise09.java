@@ -15,15 +15,15 @@ public class Exercise09 {
 		
 		while(run) {
 			System.out.println("------------------------------------------------------");
-			System.out.println("1.ÇÐ»ý¼ö | 2.Á¡¼öÀÔ·Â | 3.Á¡¼ö¸®½ºÆ® | 4.ºÐ¼® | 5.Á¾·á");
+			System.out.println("1.í•™ìƒìˆ˜ | 2.ì ìˆ˜ìž…ë ¥ | 3.ì ìˆ˜ë¦¬ìŠ¤íŠ¸ | 4.ë¶„ì„ | 5.ì¢…ë£Œ");
 			System.out.println("------------------------------------------------------");
-			System.out.print("¼±ÅÃ> ");
+			System.out.print("ì„ íƒ> ");
 			
 			int selectNo = scanner.nextInt();
 			
 			/* Jiho's Solution */
 			if(selectNo == 1) {
-				System.out.print("ÇÐ»ý¼ö> ");
+				System.out.print("í•™ìƒìˆ˜> ");
 				studentNum = scanner.nextInt();
 				scores = new int[studentNum];
 			
@@ -44,21 +44,20 @@ public class Exercise09 {
 				
 				for(int score : scores) {
 					/* Before Solution
-					 * ¡é¡é¡é
 					 * ----------------------
 					 * if(max < score)
 						   max = score;
-					 * ----------------------
-					 * Better Solution (feat. »ïÇ×¿¬»êÀÚ)
-					 * ¡é¡é¡é */
+					 * ---------------------- */
+
+					// Better Solution (feat. ì‚¼í•­ì—°ì‚°ìž)
 					max = (max < score) ? score : max;
 					
 					sum += score;
 				}
 				avg = (double) sum / scores.length;
 				
-				System.out.println("ÃÖ°í Á¡¼ö : " + max);
-				System.out.println("Æò±Õ Á¡¼ö : " + avg);
+				System.out.println("ìµœê³  ì ìˆ˜ : " + max);
+				System.out.println("í‰ê·  ì ìˆ˜ : " + avg);
 			
 			} else if(selectNo == 5) {
 				run = false;
@@ -66,7 +65,7 @@ public class Exercise09 {
 			/*  ****** ******  */
 		}
 		
-		System.out.println("ÇÁ·Î±×·¥ Á¾·á");
+		System.out.println("í”„ë¡œê·¸ëž¨ ì¢…ë£Œ");
 
 	}
 

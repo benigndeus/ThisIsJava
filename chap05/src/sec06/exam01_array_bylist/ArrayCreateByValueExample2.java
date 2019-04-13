@@ -5,7 +5,7 @@ public class ArrayCreateByValueExample2 {
 	public static void main(String[] args) {
 
 		int[] scores;
-		//scores = { 83, 90 ,87 }; -> 컴파일 에러
+		//scores = { 83, 90 ,87 }; -> compile error!
 		scores = new int[] { 83, 90, 87 };
 		
 		int sum1 = 0;
@@ -13,15 +13,15 @@ public class ArrayCreateByValueExample2 {
 			sum1 += scores[i];
 		}
 		
-		System.out.println("총합 : " + sum1);
+		System.out.println("珥앺빀 : " + sum1);
 		
-		//add({ 83, 90 ,87 }) -> 컴파일 에러
-		//int sum2 = add(scores); -> 배열 자체를 매개변수로 사용 가능
+		//add({ 83, 90 ,87 }) -> compile error!
+		//int sum2 = add(scores); -> The array itself can be used as a parameter.
 		int sum2 = add(new int[] { 83, 90 ,87 });
 		
-		System.out.println("총합 : " + sum2);
+		System.out.println("珥앺빀 : " + sum2);
 		
-		System.out.println("총합 : " + add(scores));
+		System.out.println("珥앺빀 : " + add(scores));
 
 	}
 	

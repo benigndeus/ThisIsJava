@@ -2,9 +2,9 @@ package sec06.exam01_field_declaration;
 
 public class Car {
 	
-	String company = "Çö´ëÀÚµ¿Â÷";
-	String model = "±×·£Àú";
-	String color = "°ËÁ¤";
+	String company = "í˜„ëŒ€ìë™ì°¨";
+	String model = "ê·¸ëœì €";
+	String color = "ê²€ì •";
 	int maxSpeed = 350;
 	int speed;
 

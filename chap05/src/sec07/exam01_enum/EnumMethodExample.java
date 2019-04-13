@@ -4,10 +4,12 @@ public class EnumMethodExample {
 
 	public static void main(String[] args) {
 
+		// name() method
 		Week today = Week.SUNDAY;
 		String name = today.name();
 		System.out.println(name);
 		
+		// ordinal() method
 		int ordinal = today.ordinal();
 		System.out.println(ordinal);
 		
@@ -20,9 +22,9 @@ public class EnumMethodExample {
 		
 		Week weekDay = Week.valueOf("SUNDAY");
 		if(weekDay == Week.SUNDAY || weekDay == Week.SATURDAY) {
-			System.out.println("¡÷∏ª¿Ã±∫ø‰.");
+			System.out.println("Ï£ºÎßêÏù¥Íµ∞Ïöî.");
 		} else {
-			System.out.println("∆Ú¿œ¿Ã±∫ø‰.");
+			System.out.println("ÌèâÏùºÏù¥Íµ∞Ïöî.");
 		}
 		
 		Week[] days = Week.values();

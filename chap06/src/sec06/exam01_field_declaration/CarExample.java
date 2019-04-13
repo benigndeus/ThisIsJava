@@ -4,17 +4,17 @@ public class CarExample {
 
 	public static void main(String[] args) {
 
-		//»ı¼ºÀÚ È£Ãâ
+		// Create Object
 		Car myCar = new Car();
 		
-		System.out.println("Á¦ÀÛÈ¸»ç : " + myCar.company);
-		System.out.println("¸ğµ¨¸í : " + myCar.model);
-		System.out.println("»ö±ò : " + myCar.color);
-		System.out.println("ÃÖ°í¼Óµµ : " + myCar.maxSpeed);
-		System.out.println("ÇöÀç¼Óµµ : " + myCar.speed);
+		System.out.println("ì œì‘ íšŒì‚¬ : " + myCar.company);
+		System.out.println("ëª¨ë¸ëª… : " + myCar.model);
+		System.out.println("ìƒ‰ê¹” : " + myCar.color);
+		System.out.println("ìµœê³ ì†ë„ : " + myCar.maxSpeed);
+		System.out.println("í˜„ì¬ì†ë„ : " + myCar.speed);
 		
 		myCar.speed = 60;
-		System.out.println("¼öÁ¤µÈ ¼Óµµ : " + myCar.speed);
+		System.out.println("ìˆ˜ì •ëœ ì†ë„ : " + myCar.speed);
 
 	}
 

@@ -10,10 +10,10 @@ public class AdvancedForExample {
 		for(int score : scores) {
 			sum += score;
 		}
-		System.out.println("Á¡¼ö ÃÑÇÕ = " + sum);
+		System.out.println("ì ìˆ˜ ì´í•© = " + sum);
 		
 		double avg = (double) sum / scores.length;
-		System.out.println("Á¡¼ö Æò±Õ = " + avg);
+		System.out.println("ì ìˆ˜ í‰ê·  = " + avg);
 
 	}
 

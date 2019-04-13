@@ -4,12 +4,12 @@ public class MainStringArrayExample {
 
 	public static void main(String[] args) {
 
-		// System.out.println("¹è¿­ÀÇ ±æÀÌ : " + args.length);
-		// ¸í·É ÇÁ·ÒÇÁÆ®¿¡¼­ ¹®ÀÚ¿­À» ¹Ù·Î ´ëÀÔÇÏ°Å³ª
-		// Run Configurations¿¡¼­ Arguments¸¦ ´ëÀÔÇÏ¿© ½ÇÇàÇÒ ¼ö ÀÖ´Ù.
+		// System.out.println("ë°°ì—´ì˜ ê¸¸ì´ : " + args.length);
+		/* You can do this by typing the string directly at the command prompt,
+		or by typing Arguments in the 'Run Configurations' - eclipse. */
 		
 		if(args.length != 2) {
-			System.out.println("ÇÁ·Î±×·¥ÀÇ »ç¿ë¹ı");
+			System.out.println("í”„ë¡œê·¸ë¨ì˜ ì‚¬ìš©ë²•");
 			System.out.println("java sec06.exam04_main_argument.MainStringArrayExample num1 num2");
 			System.exit(0);
 		}
