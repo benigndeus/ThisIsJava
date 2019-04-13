@@ -1,13 +1,14 @@
 package sec02.exam02_constant_field;
 
 public interface RemoteControl {
-	// 아래와 같이 public static final을 붙이지 않더라도,
-	// 자동으로 상수로 적용됨을 알 수 있다.
-	// interface에서는 필드 선언 시 반드시 초기값을 지정한다.
+	
+	/* Even if you do not add 'public static final',
+	you can see that it is automatically applied as a constant.
+	The interface must specify the initial value when declaring a field. */
 	int MAX_VOLUME = 10;
 	int MIN_VOLUME = 0;
 	
-	/* interface에서는 static 블록을 사용할 수 없다.
+	/* You can not use static blocks in an interface.
 	static {
 		
 	}

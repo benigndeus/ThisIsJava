@@ -1,6 +1,6 @@
 package sec02.exam01_interface_declaration;
 
-// interface의 constructor는 default | public 이다.
+// The interface's constructor is called 'default' or 'public'.
 public interface RemoteControl {
 	
 }

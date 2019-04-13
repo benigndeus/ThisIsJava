@@ -9,12 +9,12 @@ public interface RemoteControl {
 	void setVolume(int volume);
 
 	default void setMute(boolean mute) {
-		if(mute)	{ System.out.println("¹«À½ Ã³¸®ÇÕ´Ï´Ù."); }
-		else		{ System.out.println("¹«À½ ÇØÁ¦ÇÕ´Ï´Ù."); }
+		if(mute)	{ System.out.println("ë¬´ìŒ ì²˜ë¦¬í•©ë‹ˆë‹¤."); }
+		else		{ System.out.println("ë¬´ìŒ í•´ì œí•©ë‹ˆë‹¤."); }
 	}
 	
-	// publicÀ» ºÙÀÌÁö ¾Ê´õ¶óµµ compile °úÁ¤¿¡¼­ ÀÚµ¿À¸·Î ºÙ´Â´Ù.
+	// Even if you do not add 'public', it is attached automatically in the compile process.
 	static void changeBattery() {
-		System.out.println("°ÇÀüÁö¸¦ ±³È¯ÇÕ´Ï´Ù.");
+		System.out.println("ê±´ì „ì§€ë¥¼ êµí™˜í•©ë‹ˆë‹¤.");
 	}
 }
