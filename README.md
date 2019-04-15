@@ -298,17 +298,17 @@
 2. 작성한 소스 파일을 컴파일 한다.  
 
 ```java
-(프로젝트 폴더의 경로)> javac -d .\bin\test -sourcepath .\src\tsest A.java -encoding UTF8
+(프로젝트 폴더의 경로)> javac -d bin src\test\A.java -encoding UTF8
 
 /*
-문법 : javac -d <classpath> -sourcepath <path> <source_name.java>
+문법 : javac -d <classpath> <source>
 
-              java : 자바 컴파일 명령어
-    -d <classpath> : 클래스가 생성될 위치
--sourcepath <path> : 컴파일 할 소스파일의 위치
-<source_name.java> : 소스 파일 이름과 확장자
+	  java : 자바 컴파일 명령어
+-d <classpath> : 클래스가 생성될 위치
+      <source> : 소스 파일 이름과 확장자
 
 이제 알아서 bin에 패키지 폴더까지 생성하면서 컴파일 된다.
+근데 중첩 클래스에서 javac가 제대로 기능하지 않는 현상을 발견했다.
 
     -encoding UTF8 : 소스 파일에 한글이 들어갈 경우 이 명령어를
                     마지막에 추가하여 컴파일 한다.
@@ -329,7 +329,7 @@
 문법 : java -classpath <path> <package.class>
 
              java : 자바 실행 명령어
--classpath <path> : 클래스의 위치이나 사실상 최상위 패키지의 위치이다.
+-classpath <path> : 클래스의 위치이나 사실상 최상위 패키지의 위치(bin)이다.
                    또한 -classpath 대신 -cp로 줄여서 사용 가능하다.
   <package.class> : 최상위 패키지부터 하위 패키지 구분은 '.'을 넣어
                    클래스의 이름까지 적는다.
