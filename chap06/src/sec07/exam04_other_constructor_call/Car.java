@@ -1,38 +1,36 @@
 package sec07.exam04_other_constructor_call;
 
 public class Car {
-	
-	// Field
-	String company = "Çö´ëÀÚµ¿Â÷";
-	String model;
-	String color;
-	int maxSpeed;
-	
-	Car() {}
-	
-	Car(String model) {
-		
-		/*this.model = model;
-		this.color = null;
-		this.maxSpeed = 0;*/
-		
-		this(model, null, 0);
-		// ÁÖ¼®À» Á¦¿ÜÇÏ°í this»ı¼ºÀÚ È£ÃâÀº »ı¼ºÀÚ ¼±¾ğ½Ã Ã¹ÁÙ¿¡ ÀÛ¼ºµÇ¾î¾ß ÇÑ´Ù.
-	}
-	
-	Car(String model, String color) {
-		
-		/*this.model = model;
-		this.color = color;
-		this.maxSpeed = 0;*/
-		
-		this(model, color, 0);
-	}
-	
-	Car(String model, String color, int maxSpeed) {
-		this.model = model;
-		this.color = color;
-		this.maxSpeed = maxSpeed;
-	}
+    // Field
+    String company = "í˜„ëŒ€ìë™ì°¨";
+    String model;
+    String color;
+    int maxSpeed;
 
+    Car() {}
+
+    Car(String model) {
+        
+        /*this.model = model;
+        this.color = null;
+        this.maxSpeed = 0;*/
+        
+        this(model, null, 0);
+        // ì£¼ì„ì„ ì œì™¸í•˜ê³  thisìƒì„±ì í˜¸ì¶œì€ ìƒì„±ì ì„ ì–¸ì‹œ ì²«ì¤„ì— ì‘ì„±ë˜ì–´ì•¼ í•œë‹¤.
+    }
+
+    Car(String model, String color) {
+        
+        /*this.model = model;
+        this.color = color;
+        this.maxSpeed = 0;*/
+        
+        this(model, color, 0);
+    }
+
+    Car(String model, String color, int maxSpeed) {
+        this.model = model;
+        this.color = color;
+        this.maxSpeed = maxSpeed;
+    }
 }

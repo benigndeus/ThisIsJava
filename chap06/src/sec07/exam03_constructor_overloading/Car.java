@@ -1,29 +1,27 @@
 package sec07.exam03_constructor_overloading;
 
 public class Car {
-	
-	String company = "Çö´ëÀÚµ¿Â÷";
-	String model;
-	String color;
-	int maxSpeed;
-	
-	Car() {}
-	
-	Car(String model) {
-		this.model = model;
-	}
-	
-	Car(String model, String color) {
-		this.model = model;
-		this.color = color;
-	}
-	
-	Car(String model, String color, int maxSpeed) {
-		this.model = model;
-		this.color = color;
-		this.maxSpeed = maxSpeed;
-	}
-	
-	// "this()"¸¦ È°¿ëÇÏ¿© Áßº¹µÈ ÄÚµå¸¦ ÁÙÀÏ ¼ö ÀÖ´Ù.
+    String company = "í˜„ëŒ€ìë™ì°¨";
+    String model;
+    String color;
+    int maxSpeed;
 
+    Car() {}
+
+    Car(String model) {
+        this.model = model;
+    }
+
+    Car(String model, String color) {
+        this.model = model;
+        this.color = color;
+    }
+
+    Car(String model, String color, int maxSpeed) {
+        this.model = model;
+        this.color = color;
+        this.maxSpeed = maxSpeed;
+    }
+
+    // "this()"ë¥¼ í™œìš©í•˜ì—¬ ì¤‘ë³µëœ ì½”ë“œë¥¼ ì¤„ì¼ ìˆ˜ ìˆë‹¤.
 }

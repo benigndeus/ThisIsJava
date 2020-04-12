@@ -1,31 +1,28 @@
 package sec05.exam01_string_equals;
 
 public class StringEqualsExample {
+    public static void main(String[] args) {
 
-	public static void main(String[] args) {
+        String strVar1 = "ê¹€ì§€í˜¸";
+        String strVar2 = "ê¹€ì§€í˜¸";
+        
+        if (strVar1 == strVar2) {
+            System.out.println("strVar1ê³¼ strVar2ëŠ” ì°¸ì¡°ê°€ ê°™ìŒ.");
+        } else {
+            System.out.println("strVar1ê³¼ strVar2ëŠ” ì°¸ì¡°ê°€ ë‹¤ë¦„.");
+        }
 
-		String strVar1 = "±èÁöÈ£";
-		String strVar2 = "±èÁöÈ£";
-		
-		if(strVar1 == strVar2) {
-			System.out.println("strVar1°ú strVar2´Â ÂüÁ¶°¡ °°À½.");
-		} else {
-			System.out.println("strVar1°ú strVar2´Â ÂüÁ¶°¡ ´Ù¸§.");
-		}
-		
-		String strVar3 = new String("±èÁöÈ£");
-		String strVar4 = new String("±èÁöÈ£");
-		
-		if(strVar3 == strVar4) {
-			System.out.println("strVar3°ú strVar4´Â ÂüÁ¶°¡ °°À½.");
-		} else {
-			System.out.println("strVar3°ú strVar4´Â ÂüÁ¶°¡ ´Ù¸§.");
-		}
-		
-		if(strVar3.equals(strVar4)) {
-			System.out.println("strVar3°ú strVar4´Â ¹®ÀÚ¿­ÀÌ °°À½.");
-		}
+        String strVar3 = new String("ê¹€ì§€í˜¸");
+        String strVar4 = new String("ê¹€ì§€í˜¸");
 
-	}
+        if (strVar3 == strVar4) {
+            System.out.println("strVar3ê³¼ strVar4ëŠ” ì°¸ì¡°ê°€ ê°™ìŒ.");
+        } else {
+            System.out.println("strVar3ê³¼ strVar4ëŠ” ì°¸ì¡°ê°€ ë‹¤ë¦„.");
+        }
 
+        if(strVar3.equals(strVar4)) {
+            System.out.println("strVar3ê³¼ strVar4ëŠ” ë¬¸ìì—´ì´ ê°™ìŒ.");
+        }
+    }
 }

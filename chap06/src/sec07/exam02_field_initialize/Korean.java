@@ -1,21 +1,19 @@
 package sec07.exam02_field_initialize;
 
 public class Korean {
-	
-	String nation = "´ëÇÑ¹Î±¹";
-	String name;
-	String ssn;
-	
-	public Korean(String name, String ssn) {
-		this.name = name;
-		this.ssn = ssn;
-	}
-	
-	/* ÃßÃµÇÏÁö ¾Ê´Â ¹æ½ÄÀÇ »ı¼ºÀÚ ÀÛ¼º¹ıÀÌ´Ù. À¢¸¸ÇÏ¸é À§ÀÇ ¹æ½ÄÀ¸·Î ÀÛ¼ºÇÑ´Ù.
-	public Korean(String n, String s) {
-		name = n;
-		ssn = s;
-	}
-	*/
+    String nation = "ëŒ€í•œë¯¼êµ­";
+    String name;
+    String ssn;
 
+    public Korean(String name, String ssn) {
+        this.name = name;
+        this.ssn = ssn;
+    }
+
+    /* ì¶”ì²œí•˜ì§€ ì•ŠëŠ” ë°©ì‹ì˜ ìƒì„±ì ì‘ì„±ë²•ì´ë‹¤. ì›¬ë§Œí•˜ë©´ ìœ„ì˜ ë°©ì‹ìœ¼ë¡œ ì‘ì„±í•œë‹¤.
+    public Korean(String n, String s) {
+        name = n;
+        ssn = s;
+    }
+    */
 }

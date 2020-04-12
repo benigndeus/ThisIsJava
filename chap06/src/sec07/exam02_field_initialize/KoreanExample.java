@@ -1,19 +1,15 @@
 package sec07.exam02_field_initialize;
 
 public class KoreanExample {
-
-	public static void main(String[] args) {
-
-		Korean k1 = new Korean("¹ÚÀÚ¹Ù", "011225-1234567");
-		System.out.println("k1.nation : " + k1.nation);
-		System.out.println("k1.name : " + k1.name);
-		System.out.println("k1.ssn : " + k1.ssn);
-		
-		Korean k2 = new Korean("±èÀÚ¹Ù", "930525-0654321");
-		System.out.println("k2.nation : " + k2.nation);
-		System.out.println("k2.name : " + k2.name);
-		System.out.println("k2.ssn : " + k2.ssn);
-
-	}
-
+    public static void main(String[] args) {
+        Korean k1 = new Korean("í™ê¸¸ë™", "011225-1234567");
+        System.out.println("k1.nation : " + k1.nation);
+        System.out.println("k1.name : " + k1.name);
+        System.out.println("k1.ssn : " + k1.ssn);
+        
+        Korean k2 = new Korean("ì‹ ìš©ê¶Œ", "930525-0654321");
+        System.out.println("k2.nation : " + k2.nation);
+        System.out.println("k2.name : " + k2.name);
+        System.out.println("k2.ssn : " + k2.ssn);
+    }
 }
