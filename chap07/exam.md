@@ -164,4 +164,4 @@ B b = (      );
   ④ new E()\t//자동 타입 변환  
 
 > 답 : 2  
-부모 클래스가 자식 클래스로 Casting 되기 위해서는 child-(promotion)>parent-(casting)>child 일 경우만 가능하다.  
+부모 클래스가 자식 클래스로 Casting 되기 위해서는 child-(promotion)>parent-(casting)>child 일 경우만 가능하다.

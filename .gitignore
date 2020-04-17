@@ -1,14 +1,10 @@
-# class
-bin/
+# vscode -> 사용자 설정 계속 까먹어서 해제
+# .vscode/
 
-# vscode
-.vscode/
-
-# eclipse
-*.settings/
-.metadata/
+# Java Project
 .classpath
 .project
+.settings/
 
-# personal files
-ThisIsJava.pptx
+# class
+bin/

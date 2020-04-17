@@ -1,0 +1,18 @@
+{
+    // Default Settings
+    "editor.fontFamily": "D2Coding",    // 글꼴
+    "editor.tabSize": 4,                // Tab 사이즈
+    "editor.insertSpaces": true,        // Tab 공간에 공백문자를 넣을지 여부
+        // github에서 Tab이 8칸으로 잡히기 떄문에 Tab 대신 Space가 입력되도록 함
+
+    // Vscode Extensions - markdownlint
+    "markdownlint.config": {
+        "MD012": false, // no-multiple-blanks       연속으로 빈 줄이 있으면 안 된다는 주의 표시 무시
+        "MD022": false, // blanks-around-headings   제목에서 위,아래 줄을 비우라는 주의 표시 무시
+        "MD029": false, // ol-prefix                순차리스트의 머리를 1로 맞추라는 주의 표시 무시
+        "MD031": false, // blanks-around-fences     코드입력영역 위,아래 줄을 비우라는 주의 표시 무시
+        "MD032": false, // blanks-around-lists      리스트에서 위,아래 줄을 비우라는 주의 표시 무시
+        "MD045": false, // no-alt-text              이미지에 대한 대체 텍스트 없다는 주의 표시 무시
+        "MD047": false, // single-trailing-newline  파일의 마지막 줄은 newline으로 하라는 주의 표시 무시
+    }
+}

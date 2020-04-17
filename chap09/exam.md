@@ -42,22 +42,22 @@
 【Car.java】
 ```java
 public class Car {
-        class Tire {}
-        static class Engine {}
+    class Tire {}
+    static class Engine {}
 }
 ```
 
 【NestedClassExample.java】
 ```java
 public class NestedClassExample {
-        public static void main(String[] args) {
-                Car myCar = new Car();
+    public static void main(String[] args) {
+        Car myCar = new Car();
 
-                Car.Tire tire = myCar.new Tire();
+        Car.Tire tire = myCar.new Tire();
 
-                //Car.Engine engine = Car.new Engine(); 틀렸다.
-                Car.Engine engine = new Car.Engine();
-        }
+        //Car.Engine engine = Car.new Engine(); 틀렸다.
+        Car.Engine engine = new Car.Engine();
+    }
 }
 ```
   
@@ -68,52 +68,52 @@ public class NestedClassExample {
 【Vehicle.java】
 ```java
 public interface Vehicle {
-        public void run();
+    public void run();
 }
 ```
 
 【Anonymous.java】 익명 구현 클래스와 객체 생성
 ```java
 public class Anonymous {
-        Vehicle field = new Vehicle() {
-                @Override
-                public void run() {
-                        System.out.println("자전거가 달립니다.");
-                }
+    Vehicle field = new Vehicle() {
+        @Override
+        public void run() {
+            System.out.println("자전거가 달립니다.");
+        }
+    };
+
+    void method1() {
+        Vehicle localVar = new Vehicle() {
+            @Override
+            public void run() {
+                System.out.println("승용차가 달립니다.");
+            }
         };
+        localVar.run();
+    }
 
-        void method1() {
-                Vehicle localVar = new Vehicle() {
-                        @Override
-                        public void run() {
-                                System.out.println("승용차가 달립니다.");
-                        }
-                };
-                localVar.run();
-        }
-
-        void method2(Vehicle v) {
-                v.run();
-        }
+    void method2(Vehicle v) {
+        v.run();
+    }
 }
 ```
 
 【AnonymousExample.java】 익명 구현 클래스와 객체 생성
 ```java
 public class AnonymousExample {
-        public static void main(String[] args) {
-                Anonymous anony = new Anonymous();
-                anony.field.run();
-                anony.method1();
-                anony.method2(
-                        new Vehicle() {
-                                @Override
-                                public void run() {
-                                        System.out.println("트럭이 달립니다.");
-                                }
-                        }
-                );
-        }
+    public static void main(String[] args) {
+        Anonymous anony = new Anonymous();
+        anony.field.run();
+        anony.method1();
+        anony.method2(
+            new Vehicle() {
+                @Override
+                public void run() {
+                    System.out.println("트럭이 달립니다.");
+                }
+            }
+        );
+    }
 }
 ```
   
@@ -124,32 +124,32 @@ public class AnonymousExample {
 【Chatting.java】
 ```java
 public class Chatting {
-        void startChat(String chatId) {
+    void startChat(String chatId) {
 
-                // ① String nickName = chatId;
-                String nickName = null;
-                nickName = chatId;
-                // ①
+        // ① String nickName = chatId;
+        String nickName = null;
+        nickName = chatId;
+        // ①
 
-                Chat chat = new Chat() {
-                        @Override
-                        public void start() {
-                                while(true) {
-                                        String inputData = "안녕하세요";
-                                        String message = "[" + nickName + "]" + inputData;
-                                        sendMessage(message);
-                                }
-                        }
-                };
-                chat.start();
-        }
+        Chat chat = new Chat() {
+            @Override
+            public void start() {
+                while(true) {
+                    String inputData = "안녕하세요";
+                    String message = "[" + nickName + "]" + inputData;
+                    sendMessage(message);
+                }
+            }
+        };
+        chat.start();
+    }
 
-        class Chat {
-                void start() {}
-                void sendMessage(String message) {}
-        }
+    class Chat {
+        void start() {}
+        void sendMessage(String message) {}
+    }
 }
 ```
 
 > ~~while문 안의 sendMessage() 메소드를 사용하기 위해서는 start() 메소드와 같이 익명 구현 객체 내부에서 재정의를 해야 한다.~~ 틀림. 그래도 sendMessage()메소드는 호출이 되나...?  
-> local variable이 선언되면 final 특성을 가지므로 ①과 같이 수정해야 한다.  
+> local variable이 선언되면 final 특성을 가지므로 ①과 같이 수정해야 한다.

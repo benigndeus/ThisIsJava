@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<TilePane prefTileHeight="100" prefTileWidth="100" xmlns:fx="http://javafx.com/fxml">
+   <children>
+       <!-- 이미지 크기대로 커지기 때문에 정확한 결과를 확인할 수 없는 상태 -->
+      <ImageView>
+         <image>
+            <Image url="@images/fruit1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView>
+         <image>
+            <Image url="@images/fruit2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView>
+        <image>
+           <Image url="@images/fruit3.jpg" />
+        </image>
+     </ImageView>
+     <ImageView>
+        <image>
+           <Image url="@images/fruit4.jpg" />
+        </image>
+     </ImageView>
+     <ImageView>
+        <image>
+           <Image url="@images/fruit5.png" />
+        </image>
+     </ImageView>
+   </children>
+</TilePane>

@@ -30,7 +30,7 @@ Casting이 아니라 Promotion 된다.
 
 ```java
 public interface Soundable {
-        String sound();
+    String sound();
 }
 ```
 
@@ -38,14 +38,14 @@ SoundableExample 클래스에서 printSound() 메소드는 Soundable 인터페�
 
 ```java
 public class SoundableExample {
-        private static void printSound(Soundable soundable) {
-                System.out.println(soundable.sound());
-        }
+    private static void printSound(Soundable soundable) {
+        System.out.println(soundable.sound());
+    }
 
-        public static void main(String[] args) {
-                printSound(new Cat());
-                printSound(new Dog());
-        }
+    public static void main(String[] args) {
+        printSound(new Cat());
+        printSound(new Dog());
+    }
 }
 ```
 
@@ -53,8 +53,8 @@ public class SoundableExample {
 
 ```java
 public class Cat implements Soundable {
-        @Override
-        public String sound() { return "야옹"; }
+    @Override
+    public String sound() { return "야옹"; }
 }
 ```
 
@@ -62,8 +62,8 @@ public class Cat implements Soundable {
 
 ```java
 public class Dog implements Soundable {
-        @Override
-        public String sound() { return "멍멍"; }
+    @Override
+    public String sound() { return "멍멍"; }
 }
 ```
 
@@ -73,17 +73,17 @@ public class Dog implements Soundable {
 
 ```java
 public class DaoExample {
-        public static void dbWork(DataAccessObject dao) {
-                dao.select();
-                dao.insert();
-                dao.update();
-                dao.delete();
-        }
+    public static void dbWork(DataAccessObject dao) {
+        dao.select();
+        dao.insert();
+        dao.update();
+        dao.delete();
+    }
 
-        public static void main(String[] args) {
-                dbWork(new OracleDao());
-                dbWork(new MySqlDao());
-        }
+    public static void main(String[] args) {
+        dbWork(new OracleDao());
+        dbWork(new MySqlDao());
+    }
 }
 ```  
 
@@ -91,10 +91,10 @@ public class DaoExample {
 
 ```java
 public interface DataAccessObject {
-        public void select();
-        public void insert();
-        public void update();
-        public void delete();
+    public void select();
+    public void insert();
+    public void update();
+    public void delete();
 }
 
 //public은 생략해도 무방하다.
@@ -104,25 +104,25 @@ public interface DataAccessObject {
 
 ```java
 public class OracleDao implements DataAccessObject {
-        @Override
-        public void select() {
-                System.out.println("Oracle DB에서 검색");
-        }
+    @Override
+    public void select() {
+        System.out.println("Oracle DB에서 검색");
+    }
 
-        @Override
-        public void insert() {
-                System.out.println("Oracle DB에 삽입");
-        }
+    @Override
+    public void insert() {
+        System.out.println("Oracle DB에 삽입");
+    }
 
-        @Override
-        public void update() {
-                System.out.println("Oracle DB를 수정");
-        }
+    @Override
+    public void update() {
+        System.out.println("Oracle DB를 수정");
+    }
 
-        @Override
-        public void delete() {
-                System.out.println("Oracle DB에서 삭제");
-        }
+    @Override
+    public void delete() {
+        System.out.println("Oracle DB에서 삭제");
+    }
 }
 ```
 
@@ -130,25 +130,25 @@ public class OracleDao implements DataAccessObject {
 
 ```java
 public class MySqlDao implements DataAccessObject {
-        @Override
-        public void select() {
-                System.out.println("MySql DB에서 검색");
-        }
+    @Override
+    public void select() {
+        System.out.println("MySql DB에서 검색");
+    }
 
-        @Override
-        public void insert() {
-                System.out.println("MySql DB에 삽입");
-        }
+    @Override
+    public void insert() {
+        System.out.println("MySql DB에 삽입");
+    }
 
-        @Override
-        public void update() {
-                System.out.println("MySql DB를 수정");
-        }
+    @Override
+    public void update() {
+        System.out.println("MySql DB를 수정");
+    }
 
-        @Override
-        public void delete() {
-                System.out.println("MySql DB에서 삭제");
-        }
+    @Override
+    public void delete() {
+        System.out.println("MySql DB에서 삭제");
+    }
 }
 ```
 
@@ -160,7 +160,7 @@ public class MySqlDao implements DataAccessObject {
 
 ```java
 public interface Action {
-        void work();
+    void work();
 }
 ```
 
@@ -168,15 +168,15 @@ ActionExample 클래스의 main() 메소드에서 Action의 익명 구현 객페
 
 ```java
 public class ActionExample {
-        public static void main(String[] args) {
-                Action action = new Action() {
-                        @Override
-                        public void work() {
-                                System.out.println("복사를 합니다.");
-                        }
-                };
+    public static void main(String[] args) {
+        Action action = new Action() {
+            @Override
+            public void work() {
+                System.out.println("복사를 합니다.");
+            }
+        };
 
-                action.work();
-        }
+        action.work();
+    }
 }
 ```
