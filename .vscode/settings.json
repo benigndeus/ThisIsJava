@@ -3,7 +3,7 @@
     "editor.fontFamily": "D2Coding",    // 글꼴
     "editor.tabSize": 4,                // Tab 사이즈
     "editor.insertSpaces": true,        // Tab 공간에 공백문자를 넣을지 여부
-        // github에서 Tab이 8칸으로 잡히기 떄문에 Tab 대신 Space가 입력되도록 함
+        // github에서 Tab이 8칸으로 잡히기 때문에 Tab 대신 Space가 입력되도록 함
 
     // Vscode Extensions - markdownlint
     "markdownlint.config": {
