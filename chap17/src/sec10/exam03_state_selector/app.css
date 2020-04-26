@@ -1,0 +1,14 @@
+TextField:focused {
+    -fx-background-color: yellow;
+    -fx-border-color: skyblue;
+}
+
+Button:hover {
+    -fx-background-color: yellow;
+    -fx-border-color: skyblue;
+}
+
+Button:pressed {
+    -fx-background-color: red;
+    -fx-border-color: skyblue;
+}
