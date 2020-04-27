@@ -1,0 +1,10 @@
+#btn1 {
+    /* dropshadow(three-pass-box, 그림자색상, radius, spread(default 0), offsetX, offsetY) */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.7), 10, 0, 5, 5);
+}
+
+#btn2 {
+    /* innershadow(three-pass-box, 그림자색상, radius, choke, offsetX, offsetY) */
+    /* 이 메소드는 제대로 표현이 안 되는 버그가 존재함. offset 값을 살짝 변경해준다. */
+    -fx-effect: innershadow(three-pass-box, rgba(0, 0, 0, 0.7), 10, 0, 5.1, 5.1);
+}

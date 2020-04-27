@@ -1,0 +1,37 @@
+.root {
+    -fx-background-image: url("images/background.jpg");
+}
+
+Label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+#welcome-text {
+    -fx-font-size: 35px;
+    -fx-font-family: "Arial Black";
+
+    /* 'to bottom'이 첫 번째 매개변수(방향)로 들어가야 하지만, 안 넣으면 기본값으로 bottom으로 잡힌다. */
+    -fx-text-fill: linear-gradient(darkgray, lightgray);
+
+    /* innershadow(three-pass-box, 그림자색상, radius, choke, offsetX, offsetY) */
+    -fx-effect: innershadow(three-pass-box, rgba(0,0,0,0.7), 3, 0, 2.0, 2.0);
+}
+
+.button {
+    -fx-background-color: linear-gradient(#61a2b1, #2a5058);
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    /* dropshadow(three-pass-box, 그림자색상, radius, spread(default 0), offsetX, offsetY) */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 2.0, 2.0);
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(#2a5058, #61a2b1);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(yellow, #61a2b1);
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<HBox xmlns:fx="http://javafx.com/fxml" spacing="20">
+    <padding>
+        <Insets topRightBottomLeft="10" />
+    </padding>
+    <children>
+        <VBox id="vbox1" prefHeight="100" prefWidth="100" />
+        <VBox id="vbox2" prefHeight="100" prefWidth="100" />
+        <VBox id="vbox3" prefHeight="100" prefWidth="100" />
+        <VBox id="vbox4" prefHeight="100" prefWidth="100" />
+        <VBox id="vbox5" prefHeight="100" prefWidth="100" />
+        <VBox id="vbox6" prefHeight="100" prefWidth="100" />
+    </children>
+</HBox>
