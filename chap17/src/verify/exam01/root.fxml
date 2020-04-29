@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            prefHeight="200" prefWidth="300"
+            fx:controller="verify.exam01.RootController">
+    <center>
+        <TableView>
+            <columns>
+                <TableColumn prefWidth="75" text="이름" />
+                <TableColumn prefWidth="75" text="국어" />
+                <TableColumn prefWidth="75" text="수학" />
+                <TableColumn prefWidth="75" text="영어" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="10">
+            <children>
+                <Button text="추가" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>
