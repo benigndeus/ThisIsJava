@@ -1,4 +1,4 @@
-package verify.exam01;
+package verify.exam04;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -9,10 +9,11 @@ import javafx.stage.Stage;
 public class AppMain extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
+        primaryStage.setTitle("Exam 03");
+
         Parent root = FXMLLoader.load(getClass().getResource("root.fxml"));
         Scene scene = new Scene(root);
 
-        primaryStage.setTitle("Exam 01");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.show();

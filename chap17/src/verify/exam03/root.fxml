@@ -7,8 +7,8 @@
 <?import javafx.scene.control.Button?>
 
 <BorderPane xmlns:fx="http://javafx.com/fxml"
-            fx:controller="verify.exam01.RootController">
-
+            fx:controller="verify.exam03.RootController">
+    
     <center>
         <TableView fx:id="tableView" prefHeight="200" prefWidth="420">
             <columns>

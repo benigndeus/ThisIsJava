@@ -7,8 +7,8 @@
 <?import javafx.scene.control.Button?>
 
 <BorderPane xmlns:fx="http://javafx.com/fxml"
-            fx:controller="verify.exam01.RootController">
-
+            fx:controller="verify.exam05.RootController">
+    
     <center>
         <TableView fx:id="tableView" prefHeight="200" prefWidth="420">
             <columns>
@@ -21,9 +21,10 @@
     </center>
 
     <bottom>
-        <HBox prefHeight="50" alignment="CENTER">
+        <HBox prefHeight="50" alignment="CENTER" spacing="20">
             <children>
-                <Button fx:id="btnAdd" text="추가" />
+                <Button fx:id="btnAdd"      text="추가" />
+                <Button fx:id="btnBarChart" text="학생별 막대그래프" />
             </children>
         </HBox>
     </bottom>
