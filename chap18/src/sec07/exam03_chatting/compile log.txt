@@ -1,0 +1,48 @@
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting
+$ javac --module-path %JAVA_FX% --add-modules javafx.controls -encoding UTF-8  ServerExample.java
+error: module not found: javafx.controls
+1 error
+
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting
+$ javac --module-path %JAVA_FX%/lib --add-modules javafx.controls -encoding UTF-8  ServerExample.java
+error: module not found: javafx.controls
+1 error
+
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting
+$ javac --module-path %JAVA_FX%/lib --add-modules javafx.controls -encoding UTF-8  ServerExample.java
+error: module not found: javafx.controls
+1 error
+
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting
+$ javac --module-path "C:/Java/javafx-sdk-11.0.2/lib" --add-modules javafx.controls -encoding UTF-8  ServerExample.java
+
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting
+$ javac --module-path "C:/Java/javafx-sdk-11.0.2/lib" --add-modules javafx.controls -encoding UTF-8  ClientExample.java
+
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting
+$ java ServerExample
+Error: Could not find or load main class ServerExample
+Caused by: java.lang.NoClassDefFoundError: sec07/exam03_chatting/ServerExample (wrong name: ServerExample)
+
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting
+$ java C:/Users/user/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting/ServerExample
+Error: Could not find or load main class C:.Users.user.benigndeus.Projects.Chapter18.src.sec07.exam03_chatting.ServerExample
+Caused by: java.lang.ClassNotFoundException: C:.Users.user.benigndeus.Projects.Chapter18.src.sec07.exam03_chatting.ServerExample
+
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting
+$ java cp bin ServerExample
+Error: Could not find or load main class cp
+Caused by: java.lang.ClassNotFoundException: cp
+
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting
+$ java -cp bin ServerExample
+Error: Could not find or load main class ServerExample
+Caused by: java.lang.ClassNotFoundException: ServerExample
+
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18
+$ java -cp src sec07.exam03_chatting.ServerExample
+Error: Could not find or load main class sec07.exam03_chatting.ServerExample
+Caused by: java.lang.NoClassDefFoundError: javafx/application/Application
+
+user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18
+$ java --module-path "C:/Java/javafx-sdk-11.0.2/lib" --add-modules javafx.controls -cp src sec07.exam03_chatting.ServerExample
