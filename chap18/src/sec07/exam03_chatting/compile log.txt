@@ -13,6 +13,7 @@ $ javac --module-path %JAVA_FX%/lib --add-modules javafx.controls -encoding UTF-
 error: module not found: javafx.controls
 1 error
 
+/* 컴파일 성공 로그 */
 user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18/src/sec07/exam03_chatting
 $ javac --module-path "C:/Java/javafx-sdk-11.0.2/lib" --add-modules javafx.controls -encoding UTF-8  ServerExample.java
 
@@ -44,5 +45,6 @@ $ java -cp src sec07.exam03_chatting.ServerExample
 Error: Could not find or load main class sec07.exam03_chatting.ServerExample
 Caused by: java.lang.NoClassDefFoundError: javafx/application/Application
 
+/* 실행 성공 로그 */
 user@JIHO-LAPTOP MINGW64 ~/benigndeus/Projects/Chapter18
 $ java --module-path "C:/Java/javafx-sdk-11.0.2/lib" --add-modules javafx.controls -cp src sec07.exam03_chatting.ServerExample
