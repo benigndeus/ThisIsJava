@@ -30,11 +30,12 @@ public class WatchServiceExample extends Application {
                 while (true) {
                     WatchKey watchKey = watchService.take();
                     List<WatchEvent<?>> list = watchKey.pollEvents();
+
+                    // WatchEvent is a raw type. References to generic type WatchEvent<T> should be parameterized
                     for (WatchEvent watchEvent : list) {
-                        // WatchEvent is a raw type. References to generic type WatchEvent<T> should be parameterized
-                        // 이벤트 종류 얻기
-                        Kind kind = watchEvent.kind();
                         // WatchEvent.Kind is a raw type. References to generic type WatchEvent.Kind<T> should be parameterized
+                        Kind kind = watchEvent.kind(); // 이벤트 종류 얻기
+                        
                         // 감지된 Path 얻기
                         Path path = (Path) watchEvent.context();
                         if (kind == StandardWatchEventKinds.ENTRY_CREATE) {
@@ -47,7 +48,7 @@ public class WatchServiceExample extends Application {
                             // 변경되었을 경우 실행할 코드
                             Platform.runLater(()->textArea.appendText("파일 변경됨 -> " + path.getFileName() + "\n"));
                         } else if (kind == StandardWatchEventKinds.OVERFLOW) {
-                            // 보통 실행할 경우 없음
+                            // OVERFLOW 되었을 경우 실행할 코드 -> 보통 실행할 경우 없음
                         }
                     }
                     boolean valid = watchKey.reset();

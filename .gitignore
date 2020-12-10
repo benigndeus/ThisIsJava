@@ -9,5 +9,8 @@
 # class
 bin/
 
+# 생성된 예제 소스
+Temp/
+
 # This Is Java - Example Sources / 용량이 너무 크다
 media/
